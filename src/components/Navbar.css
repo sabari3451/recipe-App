@@ -1,0 +1,44 @@
+/* Navbar container */
+.navbar {
+  background: linear-gradient(to right, #4fd1c5, #667eea);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Inner flex container */
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styles */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Navigation links container (separate styling) */
+.nav-links-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  gap: 20px;
+}
+
+/* Individual navigation links */
+.nav-link {
+  text-decoration: none;
+  color: #2d68ff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1a44c2;
+}

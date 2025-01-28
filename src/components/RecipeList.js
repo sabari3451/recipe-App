@@ -1,14 +1,15 @@
 import React from "react";
 import RecipeCard from "./RecipeCard";
 
-const RecipeList = ({ recipes, toggleFavorite }) => {
+const RecipeList = ({ recipes, onFavorite, favorites }) => {
     return (
         <div className="recipe-list">
             {recipes.map((recipe) => (
                 <RecipeCard
-                    key={recipe.uri}
+                    key={recipe.id}
                     recipe={recipe}
-                    toggleFavorite={toggleFavorite}
+                    onFavorite={onFavorite}
+                    isFavorite={favorites.some((fav) => fav.id === recipe.id)}
                 />
             ))}
         </div>

@@ -1,21 +1,20 @@
 import React from "react";
 import RecipeCard from "./RecipeCard";
 
-const Favorites = ({ favorites, toggleFavorite }) => {
+const Favorites = ({ favorites, onRemoveFavorite }) => {
     return (
         <div className="favorites">
-            <h2>Your Favorites</h2>
-            {favorites.length > 0 ? (
-                favorites.map((recipe) => (
+            <h2>Favorites</h2>
+            <div className="recipe-list">
+                {favorites.map((recipe) => (
                     <RecipeCard
-                        key={recipe.uri}
+                        key={recipe.id}
                         recipe={recipe}
-                        toggleFavorite={toggleFavorite}
+                        onFavorite={onRemoveFavorite}
+                        isFavorite={true}
                     />
-                ))
-            ) : (
-                <p>No favorites yet.</p>
-            )}
+                ))}
+            </div>
         </div>
     );
 };

@@ -10,20 +10,20 @@ export const fetchRecipes = async (query = "chicken", mealType = "") => {
             {
                 params: {
                     query: query, // Search term
-                    type: mealType, // e.g., breakfast, lunch, dinner
-                    number: 10, // Number of recipes to fetch
+                    type: mealType, // Meal type filter
+                    number: 12, // Number of recipes to fetch
                     apiKey: API_KEY, // Spoonacular API Key
                 },
             }
         );
 
-        // Log response data for debugging
         console.log("API Response:", response.data);
-
         return response.data.results; // Return recipes
     } catch (error) {
-        // Log error for debugging
-        console.error("Error fetching recipes:", error.response || error);
+        console.error(
+            "Error fetching recipes:",
+            error.response?.data || error.message
+        );
         return [];
     }
 };

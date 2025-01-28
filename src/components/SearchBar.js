@@ -5,19 +5,21 @@ const SearchBar = ({ onSearch }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (query) onSearch(query);
+        onSearch(query);
     };
 
     return (
-        <form onSubmit={handleSubmit} className="search-bar">
-            <input
-                type="text"
-                placeholder="Search for recipes..."
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-            />
-            <button type="submit">Search</button>
-        </form>
+        <div className="search-bar">
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    placeholder="Search for recipes..."
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                />
+                <button type="submit">Search</button>
+            </form>
+        </div>
     );
 };
 

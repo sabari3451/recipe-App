@@ -1,26 +1,28 @@
+/* General Styles */
 body {
-  font-family: 'Poppins', sans-serif; /* Modern and clean font */
-  background: linear-gradient(to right, #74ebd5, #acb6e5); /* Beautiful gradient background */
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
   margin: 0;
   padding: 20px;
-  color: #333; /* Default text color */
+  color: #333;
   overflow-x: hidden;
 }
 
 h1 {
   text-align: center;
-  color: #2c3e50; /* Darker shade for the heading */
+  color: #2c3e50;
   font-size: 3rem;
   margin-bottom: 30px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Search & Filter Bar */
 .search-bar,
 .filter-bar {
   display: flex;
   justify-content: center;
   margin: 20px 0;
-  gap: 10px; /* Space between elements */
+  gap: 10px;
 }
 
 .search-bar input {
@@ -43,7 +45,7 @@ h1 {
 .filter-bar button {
   padding: 12px 20px;
   font-size: 16px;
-  background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient button */
+  background: linear-gradient(135deg, #007bff, #0056b3);
   color: white;
   border: none;
   cursor: pointer;
@@ -54,10 +56,11 @@ h1 {
 
 .search-bar button:hover,
 .filter-bar button:hover {
-  background: linear-gradient(135deg, #0056b3, #003f8a); /* Darker gradient */
-  transform: translateY(-2px); /* Lift effect */
+  background: linear-gradient(135deg, #0056b3, #003f8a);
+  transform: translateY(-2px);
 }
 
+/* Recipe List & Favorites */
 .recipe-list,
 .favorites {
   display: grid;
@@ -66,20 +69,21 @@ h1 {
   margin-top: 30px;
 }
 
+/* Recipe Card */
 .recipe-card {
   background: white;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 16px;
   text-align: center;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
 }
 
 .recipe-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
 .recipe-card img {
@@ -96,7 +100,7 @@ h1 {
 }
 
 .recipe-card button {
-  background-color: #ff6b6b; /* Vibrant red for favorite button */
+  background-color: #ff6b6b;
   color: white;
   padding: 8px 15px;
   font-size: 14px;
@@ -108,10 +112,73 @@ h1 {
 }
 
 .recipe-card button:hover {
-  background-color: #e84141; /* Darker red on hover */
-  transform: translateY(-2px); /* Lift effect */
+  background-color: #e84141;
+  transform: translateY(-2px);
 }
 
+/* Favorites Page */
+.favorites-page {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.favorites-page h1 {
+  color: #ff4757;
+  font-size: 2.5rem;
+}
+
+/* Recipe Details Page */
+.recipe-details {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-details img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.recipe-details h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+.recipe-details p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff4757;
+}
+
+/* Footer */
 footer {
   text-align: center;
   margin-top: 50px;
