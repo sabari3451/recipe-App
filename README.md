@@ -30,7 +30,7 @@ Run the following command to install all necessary dependencies:
 
 2. API Configuration
 
-const API_KEY = b8766df8f4ae4acb8c73565dc1936ef3;
+ API_KEY = b8766df8f4ae4acb8c73565dc1936ef3
 
 3. Folder Structure
 
