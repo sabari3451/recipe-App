@@ -49,6 +49,7 @@ recipe-finder/
 ├── package.json        # Project dependencies and scripts  
 ├── README.md           # Project documentation  
 
+![image](https://github.com/user-attachments/assets/1f9ef9dc-aabb-48a5-afb0-ccf55c043c4c)
 
 
 
